@@ -1,8 +1,10 @@
-import { Col, Container, Tab } from "react-bootstrap";
+import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
 import { ProjectCard } from './ProjectCard';
 import depoImg from '../assets/img/depoImg.PNG';
 import figlanceImg from '../assets/img/fiGlance.JPG';
 import networkApiImg from '../assets/img/mongoProject.JPG';
+import ecommerceImg from '../assets/img/ecommerceImg.JPG';
+import mySqlImg from '../assets/img/mySql.JPG';
 
 export const Projects = () => {
     const projects = [
@@ -37,26 +39,26 @@ export const Projects = () => {
         <section className="project" id="project">
             <Container>
                 <Row>
-                    <Col>
-                        <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                    <Col>                        
                         <h2> Projects</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore <br></br>magna aliqua. Ut enim ad minim veniam.</p>
-                        <Nav variant="pils" defaultActiveKey="/home">
+                        <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                        <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                          <Nav.Item>
-                                <Nav.Link eventKey="first">Tab One</Nav.Link>
+                                <Nav.Link eventKey="first">Full Stack Applications</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="second">Tab Two</Nav.Link>
+                                <Nav.Link eventKey="second">Back-End Work</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link eventKey="third">Tab Three</Nav.Link>
+                                <Nav.Link eventKey="third">Front-End Work</Nav.Link>
                             </Nav.Item>
                         </Nav>
                         <Tab.Content>
                             <Tab.Pane eventKey="first">
                                 <Row>
                                     {
-                                        projects.map((project, index) => {
+                                        projects.slice(0,2).map((project, index) => {
                                             return (
                                                 <ProjectCard
                                                     key={index}
@@ -67,7 +69,20 @@ export const Projects = () => {
                                     }
                                 </Row>
                             </Tab.Pane>
-                            <Tab.Pane eventKey="second">Lorem</Tab.Pane>
+                            <Tab.Pane eventKey="second">
+                            <Row>
+                                    {
+                                        projects.slice(2,5).map((project, index) => {
+                                            return (
+                                                <ProjectCard
+                                                    key={index}
+                                                    {...project}
+                                                    />
+                                            )
+                                        })
+                                    }
+                                </Row>
+                            </Tab.Pane>
                             <Tab.Pane eventKey="third">Lorem</Tab.Pane>
                         </Tab.Content>
                         </Tab.Container>
