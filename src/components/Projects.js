@@ -56,7 +56,7 @@ export const Projects = () => {
                         </Nav>
                         <Tab.Content>
                             <Tab.Pane eventKey="first">
-                                <Row>
+                                <Row className="mx-auto">
                                     {
                                         projects.slice(0,2).map((project, index) => {
                                             return (

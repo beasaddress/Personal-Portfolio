@@ -34,10 +34,13 @@ body {
   overflow-x: hidden;
   /* maybe change this to scroll? ^^*/
   position: relative;
-  background-image: url('./assets/img/banner-bg.jpg');
+  background-image: url('./assets/img/banner-bg1.jpg');
+  image-resolution: inherit;
   background-size: cover;
   color: #fff ;
   font-family: 'Centra', sans-serif !important;
+  
+  
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -94,16 +97,21 @@ nav.navbar {
   top: 0;
   z-index: 9999;
   transition:  0.32s ease-in-out;
+  max-width: 100%;
+  
   
 }
 nav.navbar.scrolled {
   padding: 0px 0;
   background-color: #121212;
+  opacity: .83;
 }
 nav.navbar a.navbar-brand {
     width: 30%;
     padding-right: 100px;
     display: flex;
+    min-width: 30%;
+    
     
 }
 
@@ -275,6 +283,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   white-space: nowrap;
   color:#E6E6DD;
   
+  
+  
 }
 
 
@@ -307,8 +317,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner img {
   animation: updown 3s linear infinite;
-  width: 900px;
-  height: auto;
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  z-index: -2;
+  
 
 }
 @keyframes updown {
@@ -331,6 +344,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 0 0 50px 0;
   position: relative;
   
+  
 }
 
 .skill-bx {
@@ -339,6 +353,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
+  opacity: .73;
   
 }
 
@@ -372,7 +387,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: black;
+  
 }
 .project h2 {
 	font-size: 45px;
@@ -417,17 +432,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: absolute;
     width: 0;
     height: 100%;
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    /* fix the gradient*/
+    background: linear-gradient(90.21deg, #e2dde0 -5.91%, rgb(99, 22, 102)) 111.58%);
     top: 0;
+    opacity: .33;
     left: 0;
     z-index: -1;
     transition: 0.3s ease-in-out;
 }
 .project .nav.nav-pills .nav-link.active::before {
     width: 100% !important;
+    
 }
 .project .nav.nav-pills .nav-link.active {
     border: 1px solid rgba(255, 255, 255, 1);
+    
 }
 .nav-link#projects-tabs-tab-first {
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -441,28 +460,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
 }
-.proj-card {
-  display: flex;
-  flex-direction: column;
-  height: 150px; /* Ensures that each card takes the full height of its container */
-}
-
-.proj-imgbx {
-  flex-grow: 1; /* Allows the image container to take the available space */
-  overflow: hidden; /* Hides any overflow from the image */
-}
-
 .proj-img {
   width: 100%; /* Ensures the image takes 100% of the width of its container */
-  height: 100%; /* Ensures the image takes 100% of the height of its container */
+  height: 320px; /* Ensures the image takes 100% of the height of its container */
   object-fit: cover; /* Maintains the image aspect ratio and covers the container */
+  
+  
 }
+
 .proj-imgbx {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
-
+  flex-grow: 1;
 }
 .proj-imgbx::before {
   content: "";
@@ -502,7 +513,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 15px;
   letter-spacing: 0.8px;
 }
-
 .App {
   text-align: center;
 }
