@@ -42,31 +42,31 @@ export const Skills = () => {
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore <br></br>magna aliqua. Ut enim ad minim veniam.</p>
                             <Carousel responsive={responsive} infinite={true}  className="skill-slider">
                                 <div className="item">
-                                  <img src={JsSkill} alt="image" />
+                                  <img src={JsSkill} alt="JavaScript logog" />
                                   <h5>JavaScript/HTML/CSS</h5>
                                 </div>
                                 <div className="item">
-                                  <img src={reactSkill} alt="image" />
+                                  <img src={reactSkill} alt="react logo" />
                                   <h5>React</h5>
                                 </div>
                                 <div className="item">
-                                  <img src={resDesign} alt="image" />
+                                  <img src={resDesign} alt="different devices graphic" />
                                   <h5>Responsive Design</h5>
                                 </div>
                                 <div className="item">
-                                  <img src={APISkill} alt="image" />
+                                  <img src={APISkill} alt="API graphic" />
                                   <h5>RESTful API's</h5>
                                 </div>
                                 <div className="item">
-                                  <img src={DBmgmt} alt="image" />
+                                  <img src={DBmgmt} alt="mongoDB and mySQL logo" />
                                   <h5>Database Management</h5>
                                 </div>
                                 <div className="item">
-                                  <img src={jest} alt="image" />
+                                  <img src={jest} alt="debugging graphic" />
                                   <h5>Testing/Debugging</h5>
                                 </div>
                                 <div className="item">
-                                  <img src={agile} alt="image" />
+                                  <img src={agile} alt="teamwork graphic" />
                                   <h5>Agile/Scrum Methodologies</h5>
                                 </div>
                             </Carousel>
