@@ -27,6 +27,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
+  
 }
 
 body {
@@ -94,8 +95,8 @@ nav.navbar {
   padding: 1px 0px;
   position: fixed;
   width: 100%;
-  height: 150px;
-  top: 0;
+  height: 190px;
+  top: 0px;
   z-index: 9999;
   transition:  0.32s ease-in-out;
   max-width: 100%;
@@ -109,12 +110,16 @@ nav.navbar.scrolled {
 }
 nav.navbar a.navbar-brand {
     width: 30%;
-    padding-right: 100px;
-    display: flex;
-    min-width: 30%;
+    padding-top: 0px;
     
+    display: flex;
+    min-width: 30%;  
     
 }
+
+
+
+
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -124,7 +129,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   font-size: 30px;
   
   opacity: 0.75;
-  margin: 0px -250px 0px 250px;
+  margin: 0px 0px 0px 0px;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
@@ -153,7 +158,7 @@ span.navbar-text {
 }
 .social-icon a::before {
     content: "";
-    width: 42px;
+    width: 42px ;
     height: 42px;
     position: absolute;
     background-color: #ffffff;
@@ -241,7 +246,9 @@ nav.navbar .navbar-toggler-icon:before {
 }
 nav.navbar .navbar-toggler-icon:after {
 	top: 8px;
+  
 }
+
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
 	transform: rotate(45deg);
 	background-color: #fff;
@@ -254,13 +261,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
+  
+
 }
+
 
 /* Banner CSS */
 
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
+  
   
 }
 .banner .tagline {
@@ -283,6 +294,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
   white-space: nowrap;
   color:#E6E6DD;
+  
   
   
   
@@ -344,8 +356,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skills {
   padding: 150px 0px 50px 0;
   position: relative;
-  
-  
+  width: 100%;  
 }
 
 .skill-bx {
@@ -520,6 +531,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact {
   background: transparent;
   padding: 0px 0 0px 0;  
+  z-index: -1;
 }
 
 .contact .form-box {
@@ -594,10 +606,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form button:hover::before {
   width: 100%;
 }
-.contact form .status {
-
+.footer {
+  padding: 0px 0 0px 0;
+  z-index: 1;
+  margin-top: -250px;
+}
+.footer .logo img {
+  padding: 0px 350px 10px 0;;
+}
+.footer img {
+  width: 100%;
+  
 }
 
+.footer p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
 .App {
   text-align: center;
 }

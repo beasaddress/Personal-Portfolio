@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contactphoto.svg";
 
+
 export const Contact = () => {
     const formInitialDetails = {
         firstName: '',
@@ -85,6 +86,7 @@ export const Contact = () => {
                     
                 </Row>
             </Container>
+            
         </section>
     )
 }

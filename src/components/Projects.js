@@ -6,6 +6,7 @@ import networkApiImg from '../assets/img/mongoProject.JPG';
 import ecommerceImg from '../assets/img/ecommerceImg.JPG';
 import mySqlImg from '../assets/img/mySql.JPG';
 
+
 export const Projects = () => {
     const projects = [
         {
@@ -89,6 +90,7 @@ export const Projects = () => {
                     </Col>
                 </Row>
             </Container>
+            
         </section>
     )
 }
