@@ -15,6 +15,7 @@ export const NavBar = () => {
                 setScrolled(true);
             } else {
                 setScrolled(false);
+                setExpanded(false);
             }
         }
 
@@ -26,18 +27,25 @@ export const NavBar = () => {
     const onUpdateActiveLink = (value) => {
         setActiveLink(value);
     }
-
+    const handleToggle = () => {
+      setExpanded(!expanded);
+    };
     return (
        
-    <Navbar expanded={expanded} expand="lg" className= {scrolled ? "scrolled": ""}>
+    <Navbar expanded={expanded} expand="lg"  className={` ${scrolled ? "scrolled" : ""}${expanded ? " expanded-navbar" : ""}`}>
       <Container className="align-items-center">
         <Navbar.Brand href="#home">
             <img src={logo} alt="logo" />
         </Navbar.Brand>
-        <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} aria-controls="basic-navbar-nav">
+        <Navbar.Toggle onClick={() => {
+          setExpanded(expanded ? false : "expanded");
+          handleToggle();
+          setScrolled(true);
+          }} 
+          aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>    
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav" className={expanded ? 'show': ''}>
           <Nav className="ms-auto">
             <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => {
             onUpdateActiveLink('home');
