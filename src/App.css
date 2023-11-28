@@ -35,16 +35,20 @@ body {
   overflow-x: hidden;
   /* maybe change this to scroll? ^^*/
   position: relative;
-  background-image: url('./assets/img/banner-bg1.jpg');
+  background-image: url('./assets/img/banner-bg2.jpg');
   
   image-resolution: inherit;
   background-size: cover;
   color: #fff ;
-  font-family: 'Centra', sans-serif !important;
-  
-  
+  font-family: 'Centra', sans-serif !important;  
 }
-
+@media (max-width: 768px) {
+  body {
+    background-size: contain;
+    
+  }
+}
+#ecbdc3
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -365,8 +369,27 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 600px;
   object-fit: cover;
   z-index: -2;
-  
+}
 
+@media (max-width: 767px) {
+  .banner .align-items-center {
+    flex-direction: column-reverse; /* Reverse the order of flex items for mobile */
+  } 
+  .banner img {
+    position: absolute; /* Absolute positioning for the image */
+    top: 2%;
+    left: -30%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: auto;
+  }
+  .banner .intro {
+    margin-top: 140px;
+  }
+  .banner .intro button {
+    left: -40%;
+    position: relative;
+  }
 }
 @keyframes updown {
     0% {

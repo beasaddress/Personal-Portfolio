@@ -44,7 +44,7 @@ const tick = () => {
         <section className="banner" id="home">
             <Container>
                 <Row className="align-items-center">
-                    <Col xs={12} md={6} xl={7}>
+                    <Col xs={12} md={6} xl={7} className="intro">
                         <span className="tagline">Welcome to my Portfolio</span>
                         <h1 style={{ height: '100px', lineHeight: '1.5' }} >{`Hi, I'm Beatriz`} <br /> <span className="wrap" >{text}</span></h1>                        
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt, nunc auctor euismod malesuada, purus augue tincidunt elit. Fusce suscipit, nisl vel fringilla sagittis, quam justo auctor nisi, ac tincidunt ante libero nec orci. Suspendisse in odio augue. Integer vel viverra nibh.</p>
