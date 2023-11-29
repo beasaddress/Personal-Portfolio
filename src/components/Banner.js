@@ -47,7 +47,7 @@ const tick = () => {
                     <Col xs={12} md={6} xl={7} className="intro">
                         <span className="tagline">Welcome to my Portfolio</span>
                         <h1 style={{ height: '100px', lineHeight: '1.5' }} >{`Hi, I'm Beatriz`} <br /> <span className="wrap" >{text}</span></h1>                        
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt, nunc auctor euismod malesuada, purus augue tincidunt elit. Fusce suscipit, nisl vel fringilla sagittis, quam justo auctor nisi, ac tincidunt ante libero nec orci. Suspendisse in odio augue. Integer vel viverra nibh.</p>
+                        <p>Welcome! My digital playground here transforms innovation and creativity into a virtual reality. As a junior developer, I have a passion for problem-solving and a knack for turning complexity into elegant simplicity. My portfolio isn't just a showcase-it's an invitation to explore possibilities and build something great together!</p>
                         <button onClick={() => console.log('connect')}>Connect With Me <ArrowRightCircle size={25} /></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>

@@ -38,11 +38,12 @@ export const Projects = () => {
 
     return (
         <section className="project" id="project">
-            <Container>
+            <Container className="proj-box">
                 <Row>
-                    <Col>                        
+                    <Col> 
+                                         
                         <h2> Projects</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore <br></br>magna aliqua. Ut enim ad minim veniam.</p>
+                        <p className="mx-auto">Here, you can check out my recent projects. You'll find my tech adventures from practical command-line apps all the way to the MERN stack. Click the box and you'll be taken to my tech archives to see the magic! </p>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                         <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                          <Nav.Item>
@@ -57,7 +58,7 @@ export const Projects = () => {
                         </Nav>
                         <Tab.Content>
                             <Tab.Pane eventKey="first">
-                                <Row className="mx-auto">
+                                <Row className="mx-auto justify-content-center">
                                     {
                                         projects.slice(0,2).map((project, index) => {
                                             return (
@@ -87,6 +88,7 @@ export const Projects = () => {
                             <Tab.Pane eventKey="third">Lorem</Tab.Pane>
                         </Tab.Content>
                         </Tab.Container>
+                         
                     </Col>
                 </Row>
             </Container>

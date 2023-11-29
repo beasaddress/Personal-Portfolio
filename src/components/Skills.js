@@ -39,7 +39,7 @@ export const Skills = () => {
                             <h2>
                                 Skills
                             </h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore <br></br>magna aliqua. Ut enim ad minim veniam.</p>
+                            <p>Explore my tech toolkit—a mix of coding languages, frameworks, and software skills. Whether it's crafting user-friendly interfaces or navigating through the ever-evolving tech landscape, my expertise is your practical guide to all things digital.</p>
                             <Carousel responsive={responsive} infinite={true}  className="skill-slider">
                                 <div className="item">
                                   <img src={JsSkill} alt="JavaScript logog" />
