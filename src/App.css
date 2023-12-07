@@ -1,18 +1,18 @@
 /* Custom fonts */
 
 @font-face {
-  font-family: Centra;
-  src: url('./assets/font/CentraNo2-Bold.ttf');
+  font-family: Pixel;
+  src: url('./assets/font/Pixellettersfull-BnJ5.ttf');
   font-weight: 700;
 }
 @font-face {
-  font-family: Centra;
-  src: url('./assets/font/CentraNo2-Medium.ttf');
+  font-family: Pixel;
+  src: url('./assets/font/Pixellettersfull-BnJ5.ttf');
   font-weight: 500;
 }
 @font-face {
-  font-family: Centra;
-  src: url('./assets/font/CentraNo2-Book.ttf');
+  font-family: Pixel;
+  src: url('./assets/font/Pixellettersfull-BnJ5.ttf');
   font-weight: 400;
 }
 
@@ -40,7 +40,7 @@ body {
   image-resolution: inherit;
   background-size: cover;
   color: #fff ;
-  font-family: 'Centra', sans-serif !important;  
+  font-family: 'Pixel' !important;  
 }
 @media (max-width: 768px) {
   body {
@@ -161,7 +161,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   color: #fff !important;
   letter-spacing: 0.8px;
   display: flex;
-  font-size: 30px;
+  font-size: 40px;
   
   opacity: 0.75;
   margin: 0px 0px 0px 0px;
@@ -218,7 +218,7 @@ span.navbar-text {
   border: 1px solid #fff;
   border-radius: 64px;
   padding: 18px 34px;
-  font-size: 20px;
+  font-size: 30px;
   margin-left: 18px;
 	position: relative;
 	background-color: transparent;
@@ -313,16 +313,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+
+  background: linear-gradient(90.21deg, rgb(247, 171, 159) -10.91%, rgb(174, 85, 196) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
-  font-size: 20px;
+  color: #fff; 
+  font-size: 30px;
   margin-bottom: 16px;
   display: inline-block;
-  color: #fff;
+  
 }
 .banner h1 {
-  font-size: 65px;
-  font-weight: 700;
+  font-size: 85px;
+  font-weight: bolder;
   letter-spacing: 0.8px;
   line-height: 1;
   margin-bottom: 20px;
@@ -335,27 +337,44 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-size: 50px;
   }
   .banner p {
-    background-color: #d55a6c;
-    opacity: .5;
-    border-radius: 5px;
-    color: #000000 !important;
-    padding: 20px;
+    background: linear-gradient(217deg, rgba(245, 130, 144, 0.9), rgba(255, 0, 0, 0) 90.71%),
+    linear-gradient(127deg, rgba(252, 193, 126, 0.9), rgba(0,255,0,0) 90.71%),
+    linear-gradient(336deg, rgba(196, 145, 219, 0.9), rgba(0, 0, 255, 0) 90.71%);
+    font-size: 25px !important;
+    border-radius: 55px;
+    color: #ffffff !important;
+    padding: 40px;
+    margin-top: 100px !important;
+    box-shadow: 10px 10px 40px rgb(247, 219, 130);
+  }
+}
+.banner .cursor {
+
+  animation: blink 3s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
   }
 }
 
-
 .banner p {
   color: #E6E6DD;
-  font-size: 18px;
+  font-size: 35px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
-  margin-top: 100px;
+  margin-top: 150px;
+  font-style: italic;
 }
 .banner button {
   color: #fff;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 30px;
   margin-top: 40px;
   margin-left: 250px;
   letter-spacing: 0.8px;
@@ -416,7 +435,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Skills */
 .skills {
-  padding: 150px 0px 50px 0;
+  padding-top: 200px;
   position: relative;
   width: 100%; 
   
@@ -433,35 +452,85 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .skills h2 {
-  font-size: 45px;
+  font-size: 75px;
   font-weight: 700;
   color: #000000;
+
 }
 .skills h5 {
   font-size: 25px;
 }
 
 .skills p {
-  color: #000000;
-  font-size: 25px;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-style: italic;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin: 14px 0 75px 0;
+  background: white;
+  border-color: black;
+  border: solid;
+  box-shadow: 10px 5px 5px black;
+}
+@media (max-width: 768px) {
+  .skills p {
+    font-size: 18px;
+    
+  }
+  .skills h5 {
+    font-size: 20px;
+    font-weight: bold;
+  }
 }
 .skill-slider {
   width: 80%;
   margin: 0 auto;
-  position: relative;
+   
 }
-
+.react-multi-carousel-list.skill-slider   {
+  overflow: visible;
+}
+.skills [aria-hidden="true"] {
+  opacity: 0;
+  transition: ease-out .45s;
+}
+.skills [aria-hidden="false"] {
+transition: ease-in .45s;
+}
 .skill-slider .item img {
   width: 80%;
   margin: 0 auto 15px auto;
 }
-/* Projects */
+
+div.react-multi-carousel-list.skill-slider button.react-multiple-carousel__arrow.react-multiple-carousel__arrow {
+position: absolute;
+margin: -15%;
+z-index: 20;
+width: 60px;
+height: 60px;
+visibility: visible !important;
+overflow: visible !important;
+
+}
 .project {
-  padding: 0px 0px;
+  padding-top: 70px;
+
+}
+
+
+/* Projects */
+.proj-box {
+  
   position: relative;
+  background-color: rgba(229, 220, 220, 0.7);
+  
+  border-radius:64px;
+  text-align: center;
+  padding: 50px;
+  align-items: center;  
+  width: 80%;
+  margin: 80px;
   
  
 }
@@ -473,21 +542,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 */
 .project h2 {
-	font-size: 45px;
+	font-size: 75px;
 	font-weight: 700;
   text-align: center;
   
+
   
 }
 .project p {
   color: #000000;
-  font-size: 18px;
+  font-size: 27px;
+  font-style: italic;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  margin-right: 0;
-  margin-left: 0px;
+  width: 75%;
+  margin-bottom: 60px;
   text-align: center;
-  width: 56%;
+  background: white;
+  border-color: black;
+  border: solid;
+  box-shadow: 10px 5px 5px black;
   
 
 }
@@ -497,7 +571,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
+  
 }
+
 .project .nav.nav-pills .nav-item {
   width: 33.33333%;
   
@@ -505,10 +581,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
   border-radius: 0;
+  
   padding: 17px 0;
-  color: #fff;
+  color: #030101;
   width: 100%;
-  font-size: 17px;
+  font-size: 20px;
   letter-spacing: 0.8px;
   font-weight: 500;
   position: relative;
@@ -522,9 +599,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     width: 0;
     height: 100%;
     /* fix the gradient*/
-    background: linear-gradient(0.25turn, #e0a8bf, #f1f8eb, #f0979d);
+    background: linear-gradient(90.21deg, rgb(247, 171, 159) -10.91%, rgb(174, 85, 196) 111.58%);
     top: 0;
-    opacity: .33;
+    opacity: .53;
     left: 0;
     z-index: -1;
     transition: 0.3s ease-in-out;
@@ -608,6 +685,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: transparent;
   padding: 0px 0 0px 0;  
   z-index: -1;
+  padding-top: 150px;
 }
 
 .contact .form-box {
@@ -618,9 +696,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   animation: updown 3s linear infinite;
 }
 .contact h2 {
-	font-size: 45px;
+	font-size: 75px;
 	font-weight: 700;
   margin-bottom: 30px;
+
   
 }
 
@@ -642,7 +721,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #121212;
 }
 .contact form input::placeholder, .contact form textarea::placeholder {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   color: #fff;
 }
@@ -653,13 +732,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form button {
   font-weight: 700;
   color: #000;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255, .9);
+  
   padding: 14px 48px;
-  font-size: 18px;
+  font-size: 25px;
   margin-top: 25px;
-  border-radius: 0;
+  border-radius: 20px;
   position: relative;
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;  
+  border-color: black;
+  border: .1rem solid;
+  box-shadow: 5px 5px 5px black;
 }
 .contact form button span {
   z-index: 1;
@@ -676,6 +759,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: absolute;
   top: 0;
   left: 0;
+  border-radius: 20px;
   z-index: 0;
   transition: 0.3s ease-in-out;
 }

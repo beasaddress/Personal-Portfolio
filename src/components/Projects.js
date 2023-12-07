@@ -42,7 +42,7 @@ export const Projects = () => {
                 <Row>
                     <Col> 
                                          
-                        <h2> Projects</h2>
+                        <h2> Projects...</h2>
                         <p className="mx-auto">Here, you can check out my recent projects. You'll find my tech adventures from practical command-line apps all the way to the MERN stack. Click the box and you'll be taken to my tech archives to see the magic! </p>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                         <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">

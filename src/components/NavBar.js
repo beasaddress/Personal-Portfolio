@@ -34,34 +34,13 @@ export const NavBar = () => {
       setExpanded(!expanded);
     };
 
-    const handleNavClick = (targetId, customOffset) => {
-      
-      const targetElement = document.getElementById(targetId);
 
-      if (targetElement) {
-        const navbarHeight = document.querySelector('nav.navbar').offsetHeight;
- 
-        setTimeout(() => {
 
-        
-          const offset = customOffset !== undefined ? customOffset : targetElement.offsetTop - navbarHeight;
-          console.log('Target Element:', targetElement);
-          console.log('Navbar Height:', navbarHeight);
-          console.log('Offset:', offset);
-
-        window.scrollTo({
-          top: offset,
-          behavior: 'smooth',
-        });
-      }, 0);
-
-        
-      }
-    };
     const handleConnectClick = () => {
-      handleNavClick('connect', 770);
-      onUpdateActiveLink('connect');
+      
+      onUpdateActiveLink('contact');
       setExpanded(false);
+      console.log('connect cliked');
       
     };
     
@@ -90,14 +69,14 @@ export const NavBar = () => {
             }}
           >Home</Nav.Link>
             <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => {
-              handleNavClick('skills');
+              
               onUpdateActiveLink('skills');
               setExpanded(false);
             }}
             >Skills</Nav.Link>
-            <Nav.Link href="#project" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => {
-              handleNavClick('project');
-              onUpdateActiveLink('projects');
+            <Nav.Link href="#project" className={activeLink === 'project' ? 'active navbar-link' : 'navbar-link'} onClick={() => {
+              
+              onUpdateActiveLink('project');
               setExpanded(false);
             }}
             >Projects</Nav.Link>
@@ -107,7 +86,7 @@ export const NavBar = () => {
                 <a href="https://github.com/beasaddress" target="_blank" rel="noopener noreferrer"><img src={githubIcon} alt="icon for github link" /></a>
                 <a href="https://www.linkedin.com/in/beatriz-sandoval-36312016b/"target="_blank" rel="noopener noreferrer" ><img src={linkedInIcon} alt="icon for linkedIn link" /></a>
             </div>
-            <HashLink smooth to='#connect'>
+            <HashLink smooth to='#contact'>
             <button className ="vvd" onClick={handleConnectClick}><span>Let's Connect</span></button>
             </HashLink>
           </span>

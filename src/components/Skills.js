@@ -37,7 +37,7 @@ export const Skills = () => {
                     <Col>
                         <div className="skill-bx">
                             <h2>
-                                Skills
+                                Skills...
                             </h2>
                             <p>Explore my tech toolkit—a mix of coding languages, frameworks, and software skills. Whether it's crafting user-friendly interfaces or navigating through the ever-evolving tech landscape, my expertise is your practical guide to all things digital.</p>
                             <Carousel responsive={responsive} infinite={true}  className="skill-slider">

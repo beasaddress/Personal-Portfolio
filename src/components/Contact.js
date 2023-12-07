@@ -45,14 +45,14 @@ export const Contact = () => {
 
 
     return (
-        <section className="contact" id="connect">
+        <section className="contact" id="contact">
             <Container >
                 <Row className="align-items-center">
                     <Col md={6} >
                         <img src={contactImg} alt="contact graphic"/>
                     </Col>
                         <Col md={6} className="form-box">
-                            <h2>Get In Touch</h2>
+                            <h2>Get In Touch...</h2>
                             <form onSubmit={handleSubmit}>
                                 <Row>
                                     <Col sm={12} className="px-1">
