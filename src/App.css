@@ -15,6 +15,11 @@
   src: url('./assets/font/Pixellettersfull-BnJ5.ttf');
   font-weight: 400;
 }
+@font-face {
+  font-family: Playme;
+  src: url('./assets/font/PlaymegamesReguler-2OOee.ttf');
+  font-weight: 400;
+}
 
 /* Default */
 
@@ -35,16 +40,22 @@ body {
   overflow-x: hidden;
   /* maybe change this to scroll? ^^*/
   position: relative;
-  background-image: url('./assets/img/banner-bg2.jpg');
+  background-image: url('./assets/img/banner-bg11.jpg');
   
   image-resolution: inherit;
   background-size: cover;
+
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+
   color: #fff ;
   font-family: 'Pixel' !important;  
 }
 @media (max-width: 768px) {
   body {
-    background-size: contain;
+    background-size: cover;
     
   }
 }
@@ -325,7 +336,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner h1 {
   font-size: 85px;
   font-weight: bolder;
-  letter-spacing: 0.8px;
+  font-family: Playme;
+  letter-spacing: 2px;
   line-height: 1;
   margin-bottom: 20px;
   display: block;
@@ -438,27 +450,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding-top: 200px;
   position: relative;
   width: 100%; 
-  
+  background: rgb(229, 229, 220, .9);
 }
 
 .skill-bx {
-  background: #E6E6DD;
+  
   border-radius: 64px;
   text-align: center;
-  padding: 60px 50px;
+  
   margin-top: -60px;
-  opacity: .73;
+  
   
 }
 
 .skills h2 {
   font-size: 75px;
-  font-weight: 700;
+  font-weight: 500;
+  font-family: Playme;
   color: #000000;
 
 }
 .skills h5 {
   font-size: 25px;
+  animation: 
 }
 
 .skills p {

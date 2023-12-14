@@ -49,7 +49,7 @@ const tick = () => {
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7} className="intro">
                         <span className="tagline">Welcome to my Portfolio</span>
-                        <h1 style={{ height: '100px', lineHeight: '1.5' }} >{`hi, i'm Beatriz!`} <br /> <span className="wrap" >{text}</span><span className="cursor">|</span></h1>   
+                        <h1 style={{ height: '100px', lineHeight: '1.5' }} >{`Beatriz Sandoval`} <br /> <span className="wrap" >{text}</span><span className="cursor">|</span></h1>   
                                          
                         <p>welcome to my digital garden! as a junior developer, I have a passion for problem-solving and a knack for turning complexity into elegant simplicity. my portfolio isn't just a showcase-it's an invitation to explore possibilities and build something great!</p>
                         <button onClick={() => console.log('connect')}>Connect With Me <ArrowRightCircle size={25} /></button>
